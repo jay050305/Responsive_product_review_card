@@ -1,0 +1,118 @@
+body{
+    background-color: hsl(30, 38%, 92%);
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.whole_page{
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    width: 600px;
+    height: 400px;
+}
+.product_image{
+    display: flex;
+    height: 400px;
+    width: 300px;
+}
+.product_image img{
+    border-radius: 10px 0 0 10px;
+    object-fit: cover;
+    height: 400px;
+    width: 300px;
+}
+.description{
+    border-radius: 0 10px 10px 0;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    width: 250px;
+    padding: 25px;
+}
+.description h4{
+    margin: 0;
+    font-family: monospace;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    color: grey;
+    font-weight: 500;
+}
+.description h2{
+    margin: 20px 0;
+    font-size: 30px;
+    letter-spacing: 0.01px;
+    line-height: 35px;
+    font-family: "fraunces";
+}
+.description p{
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+}
+.description .price{
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+}
+.description .price h3{
+    margin: 20px 0;
+    width: 50%;
+    font-size: 25px;   
+    font-family: "fraunces";
+}
+.description .price h5{
+    font-size: 15px;
+    margin: 18px 0;
+    width: 50%;
+    font-family: "fraunces";
+    vertical-align: baseline;
+    line-height: 45px;
+}
+ button{
+    border: 0;
+    border-radius: 10px;
+    height: 45px;
+    background-color: hsl(158, 72%, 17%);
+    color: white;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+button svg{
+    margin: 0 10px;
+}
+@media  (max-width: 620px){
+    .whole_page{
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        height: auto;
+    } 
+    .product_image{
+        display: flex;
+        height: 200px;
+        width: 300px;
+    }
+    .product_image img{
+        border-radius: 10px 10px;
+        object-fit: cover;
+        height: 400px;
+        width: 300px;
+    }
+    .description{
+        border-radius: 0 0 10px 10px;
+        height: auto;
+        width: 250px;
+        padding: 25px;
+    }
+    .description h2{
+        margin: 10px 0;
+        font-size: 25px;
+    }
+    .description .price{
+        height: 70px;
+    }
